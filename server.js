@@ -7,15 +7,8 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors({
-  origin: "https://balajisix.github.io/library-management-frontend",
-    methods: ["GET", "POST", "DELETE", "PUT"],
-    allowedHeaders: [
-      "Content-Type",
-      "Authorization",
-      "Cache-Control",
-      "Expires",
-      "Pragma",
-    ],
+    origin: "https://balajisix.github.io",
+    methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"],
 }));
 // app.use(cors());
 app.use(express.json());
